@@ -12,7 +12,7 @@ function App() {
       {/* Random Color Generated Project */}
       <RandomColor />
       {/* Star Rating Project */}
-      <StarRating />
+      <StarRating noOfStar={10} />
       {/* Image Slider */}
       <ImageSlider />
     </div>
