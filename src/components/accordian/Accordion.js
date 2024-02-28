@@ -11,12 +11,12 @@ const Accordion = () => {
     setSelect(id === select ? null : id);
     let copyMultiple = [...multiple];
     const findIndexOfId = copyMultiple.indexOf(id);
-    // console.log(findIndexOfId);
     if (findIndexOfId === -1) {
       copyMultiple.push(id);
     } else {
       copyMultiple.splice(findIndexOfId, 1);
     }
+    console.log(copyMultiple);
     setMultiple(copyMultiple);
   };
   return (
