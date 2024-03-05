@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import data from "./data";
-import "./style.css";
+import "./Accordion.css";
 
 const Accordion = () => {
   const [select, setSelect] = useState(null);
