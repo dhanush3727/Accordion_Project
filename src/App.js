@@ -3,7 +3,9 @@ import Accordion from "./components/accordian/Accordion";
 import RandomColor from "./components/Random Color Generated/RandomColor";
 import StarRating from "./components/Star Rating/Rating";
 import ImageSlider from "./components/Image Slider/ImageSlider";
-import LoadMoreButton from "./components/load more button/LoadMoreButton";
+import LoadMoreData from "./components/load more data/LoadMoreData";
+import TreeView from "./components/Tree View/TreeView";
+import menus from "./components/Tree View/treeViewData";
 
 function App() {
   return (
@@ -24,8 +26,11 @@ function App() {
         limit={"10"}
       /> */}
 
-      {/* Load More Button */}
-      <LoadMoreButton />
+      {/* Load More Data */}
+      {/* <LoadMoreData /> */}
+
+      {/* Tree View UI Project */}
+      <TreeView menus={menus} />
     </div>
   );
 }
