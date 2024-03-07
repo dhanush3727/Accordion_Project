@@ -6,31 +6,35 @@ import ImageSlider from "./components/Image Slider/ImageSlider";
 import LoadMoreData from "./components/load more data/LoadMoreData";
 import TreeView from "./components/Tree View/TreeView";
 import menus from "./components/Tree View/treeViewData";
+import QRCodeGenerated from "./QR Code Generated/QRCodeGenerated";
 
 function App() {
   return (
     <div className="App">
       {/* Accordion Project*/}
-      {/* <Accordion /> */}
+      <Accordion />
 
       {/* Random Color Generated Project */}
-      {/* <RandomColor /> */}
+      <RandomColor />
 
       {/* Star Rating Project */}
-      {/* <StarRating noOfStar={10} /> */}
+      <StarRating noOfStar={10} />
 
       {/* Image Slider */}
-      {/* <ImageSlider
+      <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> */}
+      />
 
       {/* Load More Data */}
-      {/* <LoadMoreData /> */}
+      <LoadMoreData />
 
       {/* Tree View UI Project */}
       <TreeView menus={menus} />
+
+      {/* QR Code Generaated Project */}
+      <QRCodeGenerated />
     </div>
   );
 }
