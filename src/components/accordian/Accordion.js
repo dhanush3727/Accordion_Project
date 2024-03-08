@@ -7,7 +7,7 @@ const Accordion = () => {
   const [select, setSelect] = useState(null);
   const [multiSelection, setMultiSelection] = useState(false);
   const [multiple, setMultiple] = useState([]);
-  const handleSingleSelection = (id) => {
+  const handleSelection = (id) => {
     setSelect(id === select ? null : id);
     let copyMultiple = [...multiple];
     const findIndexOfId = copyMultiple.indexOf(id);
@@ -20,18 +20,15 @@ const Accordion = () => {
     setMultiple(copyMultiple);
   };
   return (
-    // Single Selection
     <div className="wrapper">
+      <h1>Accordian Project</h1>
       <button onClick={() => setMultiSelection(!multiSelection)}>
         Enable Multiple Selection
       </button>
       <div className="accordian">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
-            <div
-              onClick={() => handleSingleSelection(dataItem.id)}
-              className="item"
-            >
+            <div onClick={() => handleSelection(dataItem.id)} className="item">
               <div className="title">
                 <h3>{dataItem.question}</h3>
                 <span>+</span>

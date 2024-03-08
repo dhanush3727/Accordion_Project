@@ -45,6 +45,7 @@ const LoadMoreButton = () => {
   return (
     <div className="pro-container">
       <div className="product-container">
+        <h1>Load More Product</h1>
         {products && products.length
           ? products.map((item) => (
               <div className="product" key={item.id}>

@@ -16,6 +16,7 @@ const RandomColor = () => {
   };
   return (
     <div className="container" style={{ background: color }}>
+      <h1>Random Color Generated</h1>
       <h1>Hex Color : {color}</h1>
       <button onClick={randomColorGenerated}>Generate Random Color</button>
     </div>
