@@ -8,10 +8,16 @@ import TreeView from "./components/Tree View/TreeView";
 import menus from "./components/Tree View/treeViewData";
 import QRCodeGenerated from "./components/QR Code Generated/QRCodeGenerated";
 import ThemeSwitcher from "./components/Theme Switcher/ThemeSwitcher";
+import ScrollIndicator from "./components/Scroll Indicator/ScrollIndicator";
+import TabsText from "./components/Tabs/TabsText";
+import ModalPopUp from "./components/Modal Popups/ModalPopUp";
 
 function App() {
   return (
     <div className="App">
+      {/* Scroll Indicator */}
+      {/* <ScrollIndicator /> */}
+
       {/* Accordion Project*/}
       {/* <Accordion /> */}
 
@@ -38,7 +44,13 @@ function App() {
       {/* <QRCodeGenerated /> */}
 
       {/* Theme Switcher */}
-      <ThemeSwitcher />
+      {/* <ThemeSwitcher /> */}
+
+      {/* Custom Tabs Project */}
+      {/* <TabsText /> */}
+
+      {/* Modal Popups */}
+      <ModalPopUp />
     </div>
   );
 }
