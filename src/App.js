@@ -11,6 +11,7 @@ import ThemeSwitcher from "./components/Theme Switcher/ThemeSwitcher";
 import ScrollIndicator from "./components/Scroll Indicator/ScrollIndicator";
 import TabsText from "./components/Tabs/TabsText";
 import ModalPopUp from "./components/Modal Popups/ModalPopUp";
+import Profile from "./components/Github Profile/Profile";
 
 function App() {
   return (
@@ -50,7 +51,10 @@ function App() {
       {/* <TabsText /> */}
 
       {/* Modal Popups */}
-      <ModalPopUp />
+      {/* <ModalPopUp /> */}
+
+      {/* Profile Finder */}
+      <Profile />
     </div>
   );
 }
