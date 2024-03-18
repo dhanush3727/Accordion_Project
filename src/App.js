@@ -12,6 +12,14 @@ import ScrollIndicator from "./components/Scroll Indicator/ScrollIndicator";
 import TabsText from "./components/Tabs/TabsText";
 import ModalPopUp from "./components/Modal Popups/ModalPopUp";
 import Profile from "./components/Github Profile/Profile";
+import Game from "./components/Tic Tac Toe/Game";
+import { FeatureFlag } from "./components/Feature Flag/context/FeatureFlagContext";
+import Feature from "./components/Feature Flag/Feature";
+import Test from "./components/useFetch/Test";
+import UseOnClickOutSideTest from "./components/UseOutside Click/test";
+import UseWindowResizeTest from "./components/Use Windows Resize/test";
+import ScrollWindow from "./components/scroll to top and bottom/ScrollWindow";
+import ScrollParticularSection from "./components/Scroll particular section/ScrollParticularSection";
 
 function App() {
   return (
@@ -20,41 +28,64 @@ function App() {
       {/* <ScrollIndicator /> */}
 
       {/* Accordion Project*/}
-      {/* <Accordion /> */}
+      <Accordion />
 
       {/* Random Color Generated Project */}
-      {/* <RandomColor /> */}
+      <RandomColor />
 
       {/* Star Rating Project */}
-      {/* <StarRating noOfStar={10} /> */}
+      <StarRating noOfStar={10} />
 
       {/* Image Slider */}
-      {/* <ImageSlider
+      <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      /> */}
+      />
 
       {/* Load More Data */}
-      {/* <LoadMoreData /> */}
+      <LoadMoreData />
 
       {/* Tree View UI Project */}
-      {/* <TreeView menus={menus} /> */}
+      <TreeView menus={menus} />
 
       {/* QR Code Generaated Project */}
-      {/* <QRCodeGenerated /> */}
+      <QRCodeGenerated />
 
       {/* Theme Switcher */}
-      {/* <ThemeSwitcher /> */}
+      <ThemeSwitcher />
 
       {/* Custom Tabs Project */}
-      {/* <TabsText /> */}
+      <TabsText />
 
       {/* Modal Popups */}
-      {/* <ModalPopUp /> */}
+      <ModalPopUp />
 
       {/* Profile Finder */}
       <Profile />
+
+      {/* Tic Tac Toe Project*/}
+      <Game />
+
+      {/* Feature Flag Implement */}
+      <FeatureFlag>
+        <Feature />
+      </FeatureFlag>
+
+      {/* useFetch Custom Hook */}
+      <Test />
+
+      {/* use onclick outside hook */}
+      <UseOnClickOutSideTest />
+
+      {/* Windows Size */}
+      <UseWindowResizeTest />
+
+      {/* Scroll Window */}
+      <ScrollWindow />
+
+      {/* Scroll Particular Section */}
+      <ScrollParticularSection />
     </div>
   );
 }
